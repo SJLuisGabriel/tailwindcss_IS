@@ -10,7 +10,7 @@
 
   <body class="bg-slate-100">
     <header class="bg-white px-6 shadow">
-      <div class="flex h-16 items-center justify-between">
+      <div class="flex h-16 max-w-6xl mx-auto items-center justify-between">
         <button class="-ml-1 rounded p-1 text-blue-500 transition-colors hover:bg-sky-500 hover:text-slate-100
         focus:ring-2 focus:ring-slate-200">
           <svg 
@@ -29,24 +29,32 @@
             </path>
           </svg>
         </button>
-        <a class="mr-4 text-sky-500 duration-200
-         hover:rotate-6" href="">
-          <svg 
-          class="h-8 w-8"
-          data-slot="icon" 
-          fill="none" 
-          stroke-width="1.5" 
-          stroke="currentColor" 
-          viewBox="0 0 24 24" 
-          xmlns="http://www.w3.org/2000/svg" 
-          aria-hidden="true">
-            <path 
-            stroke-linecap="round" 
-            stroke-linejoin="round" 
-            d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5">
-            </path>
-          </svg>
-        </a>
+        <div class="-rm-4 flex items-center">
+          <a class="text-sky-500 duration-200
+          hover:rotate-6" href="">
+            <svg 
+            class="h-8 w-8"
+            data-slot="icon" 
+            fill="none" 
+            stroke-width="1.5" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24" 
+            xmlns="http://www.w3.org/2000/svg" 
+            aria-hidden="true">
+              <path 
+              stroke-linecap="round" 
+              stroke-linejoin="round" 
+              d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5">
+              </path>
+            </svg>
+          </a>
+          <div class="space-x-8 ml-8 hidden md:flex">
+            <a class="px-3 py-2 text-sky-500" href="#">Home</a>
+            <a class="text-slate-600 px-3 py-2 hover:text-sky-500 transition-colors" href="#">About</a>
+            <a class="text-slate-600 px-3 py-2 hover:text-sky-500 transition-colors" href="#">Blog</a>
+            <a class="text-slate-600 px-3 py-2 hover:text-sky-500 transition-colors" href="#">Contact</a>
+          </div>
+        </div>
         <div class="flex">
           <button class="rounded-full text-blue-500 transition-colors hover:text-sky-500 focus:ring-2 focus:ring-slate-200 focus:ring-offset-1">
           <svg 
@@ -71,7 +79,7 @@
           </button>
         </div>
       </div>  
-      <div class="space-">
+      <div class="hidden space-y-1 border-t pb-3 pt-2 md:hidden">
         <a href="#" class="block px-3 py-2 rounded-md  bg-sky-500
         text-white ">Home</a>
         <a href="#" class="block px-3 py-2 rounded-md transition-colors text-slate-700 hover:bg-sky-500
@@ -82,5 +90,22 @@
         hover:text-white ">Contact</a>
       </div>
     </header>
+    <main class="p-4">
+      <article class="bg-white shadow rounded overflow-hidden">
+        <div><img src="./public/img/article-3.jpg" alt="Desarrollo de una API con Laravel siguiendo la especificacion JSON:API"></div>
+        <div>
+          <h3>Laravel</h3>
+          <h2>Desarrollo de una API con Laravel siguiendo la especificacion JSON:API</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consequuntur est nostrum, nemo deserunt nam saepe debitis quidem placeat laborum sunt! Ducimus sequi at maxime in maiores, corporis quos laboriosam.</p>
+        </div>
+        <div>
+          <img src="https://ui-avatars.com/api?name=Jorge Garcia" alt="Jorge Garcia">
+          <div>
+            <span>Jorge Garcia</span>
+            <span>Mar 18, 2023</span>
+          </div>
+        </div>
+      </article>
+    </main>
   </body>
 </html>
